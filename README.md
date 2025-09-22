@@ -1,7 +1,37 @@
-# GroceryApp Sprint 1 - Studentversie  
-In deze versie zijn de wijzigingen doorgevoerd en is de code compleet.  
+# GroceryApp 
 
-## Studentversie:  
+## Gitflow:  
+Ik maak gebruik van deze branch structuur:
+```
+Main
+└── Dev
+	└──Feature/...
+└──Hotfix/...
+```
+
+In commit messages gebruik ik een vaste template:  
+*voorbeelden:*
+```
+feat(client): add EmailAddress and Password properties
+fix(login): verify password using PasswordHelper
+docs(readme): add GitFlow structure with emojis
+```
+De commit message bestaat uit vaste onderdelen:
+```
+<type>(<wat>): <korte omschrijving>
+```
+Types:
+| Type     | Wat is het?                                    | Branch          |
+| -------- | ---------------------------------------------- | --------------- |
+| hotfix   | hotfix                                         | main/hotfix/... |
+| feat     | nieuwe feature                                 | dev/feature/... |
+| bugfix   | bugfix                                         | dev/bugfix/...  |
+| docs     | documentatie                                   | dev/docs/...    |
+| test     | toevoegen / aanpassen van tests                | dev/test/...    |
+| style    | format, linting, whitespace                    | dev/style/...   |
+| refactor | code refactor (geen nieuwe feature / geen bug) | dev             |  
+
+## Use cases:  
 **UC01 Tonen boodschappenlijsten**  
 Is compleet.
 
