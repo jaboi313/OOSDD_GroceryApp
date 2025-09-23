@@ -6,9 +6,11 @@ on:
       - main
       - infra/runner-toevoegen
       - dev
+      - feature/*
   pull_request:
     branches:
       - main
+      - dev
  
 jobs:
   test:
