@@ -12,8 +12,7 @@ namespace Grocery.Core.Data.Repositories
                 new Product(1, "Melk", 300),
                 new Product(2, "Kaas", 100),
                 new Product(3, "Brood", 400),
-                new Product(4, "Cornflakes", 0)
-                ];
+                new Product(4, "Cornflakes", 0)];
         }
         public List<Product> GetAll()
         {
@@ -37,7 +36,10 @@ namespace Grocery.Core.Data.Repositories
 
         public Product? Update(Product item)
         {
-            throw new NotImplementedException();
+            Product? product = products.FirstOrDefault(p => p.Id == item.Id);
+            if (product == null) return null;
+            product.Id = item.Id;
+            return product;
         }
     }
 }
