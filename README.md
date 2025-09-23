@@ -23,6 +23,7 @@ De commit message bestaat uit vaste onderdelen:
 Types:
 | Type     | Wat is het?                                    | Branch          |
 | -------- | ---------------------------------------------- | --------------- |
+| update   | groote update van dev -> main                  | main            |
 | hotfix   | hotfix                                         | main/hotfix/... |
 | feat     | nieuwe feature                                 | dev/feature/... |
 | bugfix   | bugfix                                         | dev/bugfix/...  |
