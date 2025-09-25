@@ -32,7 +32,7 @@ namespace TestCore
         public void TestPasswordHelperReturnsFalse()
         {
             string password = "user3";
-            string passwordHash = "sxnIcZdYt8wC8MYWcQVQjQ==.FKd5Z/jwxPv3a63lX+uvQ0+P7EuNYZybvkmdhbnkIHA";
+            string passwordHash = "sxnIcZdYt8wC8MYWcQVQjQ==.FKd5Z/jwxPv3a63lX+uvQ0+P7EuNYZybvkmdhbnkIHA=";
             Assert.IsTrue(PasswordHelper.VerifyPassword(password, passwordHash));
         }
 
